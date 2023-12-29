@@ -2,3 +2,6 @@
 .prettierrc
 node_modules
 package-lock.json
+
+# Sass files and folders 
+style/style.css.map
