@@ -1,67 +1,46 @@
-.card-container {
-  width: 25%;
-  box-shadow: 8px 8px 0 black;
+.preview-card {
+  background-color: #fff;
   border-radius: 15px;
+  width: fit-content;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 
-  @media screen and (min-width: 360px) and (max-width: 1000px) {
-    width: 85%;
-    box-shadow: 8px 8px 0 black;
-  }
-
-  .preview-card {
-    background-color: #fff;
-    border-radius: 15px;
-    width: fit-content;
+  &__article-illustration {
+    width: 100%;
     padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    border-radius: 25px;
+  }
 
-    &__article-illustration {
-      width: 100%;
-      padding: 10px;
-      border-radius: 25px;
-    }
+  &__category {
+    width: fit-content;
+    padding: 5px;
+    margin-left: 20px;
+    background-color: $yellow;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
 
-    &__category {
-      width: fit-content;
-      padding: 5px;
-      margin-left: 20px;
-      background-color: $yellow;
-      border-radius: 5px;
-      font-size: 0.8rem;
-    }
+  &__publishing-date {
+    margin-left: 20px;
+    font-size: 0.8rem;
+  }
 
-    &__publishing-date {
-      margin-left: 20px;
-      font-size: 0.8rem;
-    }
-
-    &__article-title {
-      margin-left: 20px;
-      &:hover {
-        cursor: pointer;
-        color: $yellow;
-      }
-    }
-
-    &__article-introduction {
-      margin: 0 20px;
-      color: grey;
-      font-size: 0.8rem;
-      line-height: 1.3rem;
-    }
-
-    &__author-info {
-      display: flex;
-      margin-left: 20px;
-      gap: 1rem;
-      align-items: center;
-      font-size: 0.8rem;
-    }
-
-    &__article-author-picture {
-      width: 10%;
+  &__article-title {
+    margin-left: 20px;
+    &:hover {
+      cursor: pointer;
+      color: $yellow;
     }
   }
+
+  &__article-introduction {
+    margin: 0 20px;
+    color: grey;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+
+  @import './author-info';
 }
