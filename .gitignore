@@ -1,2 +1,4 @@
 # VS Code Config files & folders
 .prettierrc
+node_modules
+package-lock.json
